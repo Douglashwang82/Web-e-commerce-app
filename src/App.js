@@ -57,6 +57,7 @@ const App = () => {
             setErrorMessage(error.data.error.message);
         }
       };
+    const handleCleanErrorMessage = () => setErrorMessage('');
 
     useEffect(() => {
         fetchProducts();
@@ -73,7 +74,7 @@ const App = () => {
                     onRemoveFromCart = {handleRemoveFromCart}
                     onEmptyCart = {handleEmptyCart}
                     />}/> 
-                    <Route path="/checkout" element = {<Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage}/>}/>
+                    <Route path="/checkout" element = {<Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} cleanError={handleCleanErrorMessage}/>}/>
                 </Routes>
             </div>
         </Router>

@@ -10,7 +10,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 
-const Checkout = ( { cart , order, onCaptureCheckout, error}) => {
+const Checkout = ( { cart , order, onCaptureCheckout, error, cleanError}) => {
     const navigate = useNavigate();
     const steps = ['Shipping address', 'Payment detail'];
     const [activeStep, setActiveStep] = useState(0);
@@ -24,7 +24,7 @@ const Checkout = ( { cart , order, onCaptureCheckout, error}) => {
               console.log("tt",token);
               setcheckoutToken(token);
             } catch {
-              navigate('/');
+              //navigate('/');
             }
           };
           generateToken();
@@ -33,6 +33,7 @@ const Checkout = ( { cart , order, onCaptureCheckout, error}) => {
     
     const nextStep = () => setActiveStep((previousActiveStep) => previousActiveStep + 1);
     const backStep = () => setActiveStep((previousActiveStep) => previousActiveStep - 1);
+    const emptyShippingData = () => setShippingData({});
     const next = (data) => {
       setShippingData(data);
       console.log("shippingData:",data);
@@ -56,6 +57,7 @@ const Checkout = ( { cart , order, onCaptureCheckout, error}) => {
     ));
   
     if (error) {
+
       Confirmation = () => (
         <>
           <Typography variant="h5">Error: {error}</Typography>
@@ -65,7 +67,10 @@ const Checkout = ( { cart , order, onCaptureCheckout, error}) => {
           <br />
           <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
         </>
-      );
+      )
+    ;
+    emptyShippingData();
+    cleanError();
     }
     const Form = () => activeStep === 0 
         ?<AddressForm checkoutToken = {checkoutToken} next = {next}/>
