@@ -4,7 +4,7 @@
 ![cart](./src/assets/imgREADME/cart.png)
 ![checkout](./src/assets/imgREADME/checkout.png)
 ![payment](./src/assets/imgREADME/payment.png)
-![confirmation](./src/assets/imgREADME/confirmation.png)
+![conf](./src/assets/imgREADME/conf.png)
 ## Libraries
 ### Main
 - React.js
