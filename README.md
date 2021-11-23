@@ -1,10 +1,10 @@
 # E-Commerce App
 ## Views
 ![index](/src/assets/imgREADME/index.png?raw=true)
-![cart](./src/assets/imgREADME/cart.png)
-![checkout](./src/assets/imgREADME/checkout.png)
-![payment](./src/assets/imgREADME/payment.png)
-![confirm](./src/assets/imgREADME/confirm.png)
+![cart](/src/assets/imgREADME/cart.png?raw=true)
+![checkout](/src/assets/imgREADME/checkout.png?raw=true)
+![payment](/src/assets/imgREADME/payment.png?raw=true)
+![confirm](/src/assets/imgREADME/confirm.png?raw=true)
 ## Libraries
 ### Main
 - React.js
