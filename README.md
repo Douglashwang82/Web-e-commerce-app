@@ -1,6 +1,6 @@
 # E-Commerce App
 ## Views
-![index](/src/assets/imgREADME/index.png)
+![index](/src/assets/imgREADME/index.png?raw=true)
 ![cart](./src/assets/imgREADME/cart.png)
 ![checkout](./src/assets/imgREADME/checkout.png)
 ![payment](./src/assets/imgREADME/payment.png)
