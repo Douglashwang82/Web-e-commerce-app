@@ -1,10 +1,4 @@
 # E-Commerce App
-## Views
-![index](/src/assets/imgREADME/index.png?raw=true)
-![cart](/src/assets/imgREADME/cart.png?raw=true)
-![checkout](/src/assets/imgREADME/checkout.png?raw=true)
-![payment](/src/assets/imgREADME/payment.png?raw=true)
-![confirm](/src/assets/imgREADME/confirm.png?raw=true)
 ## Libraries
 ### Main
 - React.js
@@ -26,5 +20,12 @@
 - npm install @material-ui/core @material-ui/icons @chec/commerce.js @stripe/react-stripe-js @stripe/stripe-js react-router-dom react-hook-form
 
 - npm start
+
+## Views
+![index](/src/assets/imgREADME/index.png?raw=true)
+![cart](/src/assets/imgREADME/cart.png?raw=true)
+![checkout](/src/assets/imgREADME/checkout.png?raw=true)
+![payment](/src/assets/imgREADME/payment.png?raw=true)
+![confirm](/src/assets/imgREADME/confirm.png?raw=true)
 
 
